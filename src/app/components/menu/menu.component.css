@@ -1,0 +1,12 @@
+.menu {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.button{
+  background-color: purple;
+text-decoration: none;
+box-decoration-break: none;
+}

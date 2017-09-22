@@ -1,24 +1,41 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-
+import { RouterModule, Routes } from '@angular/router';
+import { HttpModule} from '@angular/http';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HeaderComponent } from './components/header/header.component';
+import { AboutComponent } from './components/about/about.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
+
+const appRouter : Routes = [
+  { path: 'about', component: AboutComponent},
+  { path: 'projects', component: ProjectsComponent },
+  {path: 'contact', component: ContactMeComponent}
+
+]  
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutComponent,
+    ProjectsComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    RouterModule.forRoot(//
+      appRouter,
+      {enableTracing:true}
+    )
+  //  NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {  }

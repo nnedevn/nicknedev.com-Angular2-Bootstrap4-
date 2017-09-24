@@ -11,10 +11,14 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { MenuMobileComponent } from './components/menu-mobile/menu-mobile.component';
+import { MenuMobileComponent } from './components/menu/menu-mobile/menu-mobile.component';
 
 //Routes
 const appRouter: Routes = [
+  {path: '',
+  redirectTo: '/about',
+  pathMatch: 'full'
+},
   { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactMeComponent }
@@ -34,9 +38,9 @@ const appRouter: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(//
+    RouterModule.forRoot(
       appRouter,
-      { enableTracing: true }
+      { enableTracing: false }// enable for DEV Mode
     ),
     NgbModule.forRoot()
   ],

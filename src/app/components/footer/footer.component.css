@@ -1,3 +1,12 @@
+footer a {
+  color:#00000F;
+}
+footer a:hover, a:focus {
+  color:#660099;
+  background-color: #FFF !important;
+
+}
+
 footer ul {
   border-top: 1px dashed #00000F;
   margin-top: 3em;
@@ -11,3 +20,5 @@ footer ul li {
   padding: 1em 0.325em;
   font-size: 1.5em;
 }
+
+

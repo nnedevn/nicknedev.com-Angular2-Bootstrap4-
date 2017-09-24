@@ -1,8 +1,12 @@
 .menu {
-    background-color: pink;
+  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+}
+
+.menu a {
+    color: #00000F;
 }
 
 ul {
@@ -14,11 +18,16 @@ ul {
 }
 
 nav {
+    padding-top: 15px;
     border-top: 1px dashed #00000F;
     border-bottom: 1px dashed #00000F;
+    border-left: none;
+    border-right: none;
     
 }
 
-.padded{
-    
+.nav.navbar-nav {
+    border: none;
+    margin-top: 0;
+    margin-bottom: 0;
 }

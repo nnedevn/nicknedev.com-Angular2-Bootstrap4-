@@ -13,7 +13,7 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuMobileComponent } from './components/menu/menu-mobile/menu-mobile.component';
 
-//Routes
+// Routes
 const appRouter: Routes = [
   {path: '',
   redirectTo: '/about',
@@ -23,7 +23,7 @@ const appRouter: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactMeComponent }
 
-]
+];
 
 @NgModule({
   declarations: [

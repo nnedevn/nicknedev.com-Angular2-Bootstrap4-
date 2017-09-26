@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-mobile.component.css']
 })
 export class MenuMobileComponent implements OnInit {
-
+  toggleView: false;
   constructor() { }
 
   ngOnInit() {
   }
-toggleView : false;
+
 }

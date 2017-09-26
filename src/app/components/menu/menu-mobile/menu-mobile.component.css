@@ -1,0 +1,42 @@
+.navbar-brand h1 {
+  font-size: 1em;
+}
+
+.navbar-brand h3 {
+  font-size: .85em
+}
+
+.navbar, .navbar-header, .navbar-collapse {
+  min-height: 40px;
+}
+
+a h1 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #00000F;
+  margin: 0;
+  padding: .75em 0 .1em;
+}
+
+h1 a:hover {
+  text-decoration: none;
+  color: #00000F;
+}
+
+h3 {
+  color: #789;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+  padding: 0 0 .75em;
+}
+
+h4 {
+  padding: 1em 0 0;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+nav a, footer a {
+  color: #00000F;
+}

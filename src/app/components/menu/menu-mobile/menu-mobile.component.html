@@ -10,7 +10,7 @@
       </button>
       <div class="navbar-brand">
         <a href="#">
-          <img class="logo pull-left" src="assets/logo.svg" alt="Nick Nedev">
+          <img *ngIf="toggleView" class="logo pull-left" src="assets/logo.svg" alt="Nick Nedev">
           <div class="pull-left">
             <h1>Nick Nedev</h1>
             <h3 class="title">web developer</h3>
@@ -22,7 +22,6 @@
       <div class="collapse navbar-collapse row" id="mobile-navbar">
         <ul class="nav navbar-nav col-xs-12">
           <li id="nav-about" class="button"><a routerLink="/about">about</a></li>
-          <!-- <li id="nav-code-samples" class="button"><a routerLink="/contact">code snippets</a></li> -->
           <li id="nav-projects" class="button"><a routerLink="/projects">projects</a></li>
           <li id="nav-contact" class="button"><a routerLink="/contact">contact</a></li>
         </ul>

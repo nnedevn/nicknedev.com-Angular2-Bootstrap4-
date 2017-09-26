@@ -11,5 +11,5 @@ export class MenuMobileComponent implements OnInit {
 
   ngOnInit() {
   }
-
+toggleView : false;
 }

@@ -1,3 +1,64 @@
+.nav {
+  border-top: 1px dashed #00000F;
+  border-bottom: 1px dashed #00000F;
+  border-left: none;
+  border-right: none;
+}
+
+.nav.navbar-nav {
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-collapse {
+  border-top: 1px dashed #00000F;
+}
+
+.nav-pills a:hover, .nav-pills a:active, footer a:hover {
+  color: #660099;
+  background-color: #FFF !important;
+}
+
+.nav-pills a:focus {
+  color: #00000F;
+  background-color: #FFF !important;
+}
+
+.navbar, .navbar-header, .navbar-collapse {
+  min-height: 40px;
+}
+
+.navbar-default, .navbar-collapse {
+  background-color: white;
+  border-top, border-left, border-right: none;
+  border-bottom: 1px dashed #00000F;
+}
+
+.navbar-toggle {
+  border: none;
+  margin-top: 30px;
+}
+
+.navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
+  background-color: #FFFFFF !important;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #00000F !important;
+}
+
+.navbar-collapse {
+  padding: 0;
+}
+
+.navbar-brand h1 {
+  font-size: 1em;
+}
+
+.navbar-brand h3 {
+  font-size: .85em
+}
 .navbar-brand h1 {
   font-size: 1em;
 }
@@ -8,6 +69,16 @@
 
 .navbar, .navbar-header, .navbar-collapse {
   min-height: 40px;
+}
+
+.navgar-toggle .collapsed .icon-bar{
+  background-color: red;
+}
+.navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
+  background-color: #FFFFFF !important;
+}
+.navbar{
+  border-color: #ddd;
 }
 
 a h1 {
@@ -39,4 +110,4 @@ h4 {
 
 nav a, footer a {
   color: #00000F;
-}
+} 

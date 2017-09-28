@@ -1,18 +1,21 @@
-
 <script>
 
 </script>
 <div class="container">
+  <div>
+    <div class="visible-lg visible-md visible-sm hidden-xs">
+      <app-header></app-header>
+      <app-menu></app-menu>
+    </div>
 
-  <div class="visible-lg visible-md visible-sm hidden-xs">
-    <app-header></app-header>
-    <app-menu></app-menu>
+    <div class="hidden-lg hidden-md hidden-sm visible-xs">
+      <app-menu-mobile></app-menu-mobile>
+    </div>
   </div>
 
-  <div class="hidden-lg hidden-md hidden-sm visible-xs">
-    <app-menu-mobile></app-menu-mobile>
-  </div>
-  
+
+
+
   <router-outlet></router-outlet>
 
   <app-footer></app-footer>
